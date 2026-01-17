@@ -14,57 +14,39 @@
         .card p { font-size: 13px; color: #cbd5e1; line-height: 1.4; }
         .btn-download { display: inline-block; background-color: #22c55e; color: white; text-decoration: none; padding: 12px 25px; border-radius: 8px; font-weight: bold; font-size: 14px; transition: 0.3s; border: none; cursor: pointer; animation: pulse-green 2s infinite; width: 85%; text-align: center; margin-top: 10px; }
         @keyframes pulse-green { 0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); } 70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); } 100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); } }
-        /* Style untuk Pesan Anti-Adblock */
-        #adb-msg { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 9999; justify-content: center; align-items: center; flex-direction: column; padding: 20px; }
+        .footer { margin-top: 30px; font-size: 11px; color: #64748b; }
     </style>
 </head>
 <body>
-
-<div id="adb-msg">
-    <h2 style="color: #ef4444;">ADBLOCK TERDETEKSI!</h2>
-    <p>Mohon matikan AdBlock atau DNS AdGuard Abang untuk lanjut download mod ini. Terima kasih!</p>
-    <button onclick="location.reload()" style="padding: 10px 20px; background: #38bdf8; border: none; border-radius: 5px; color: white; font-weight: bold;">SAYA SUDAH MATIKAN</button>
-</div>
 
 <div class="container">
     <h1>XTMODEPRO</h1>
     <p class="subtitle">CHEATS VIP | XT MODE PRO</p>
 
     <div class="card" style="border-left-color: #ef4444;">
-        <h3>1. LOADING AWAL (WAJIB)</h3>
-        <p>Harus pakai ini dulu biar gak stuck loading.</p>
-        <a href="https://sfl.gl/CQOG" class="btn-download">DOWNLOAD SEKARANG</a>
+        <h3>1. DOWNLOAD DATA LOADING V2 (WAJIB)</h3>
+        <p>Gunakan link ini dulu supaya tidak stuck loading pas baru buka game.</p>
+        <a href="https://sfl.gl/3sL1L" class="btn-download">DOWNLOAD SEKARANG</a>
     </div>
 
     <div class="card">
-        <h3>2. MODS BYPASS V4</h3>
-        <p>Gunakan setelah loading awal sukses.</p>
-        <a href="https://sfl.gl/IkkZ" class="btn-download">DOWNLOAD MOD V4</a>
+        <h3>2. MODS BYPASS V5</h3>
+        <p>Gunakan link ini setelah loading awal sukses. Mod terbaru anti-banned.</p>
+        <a href="https://sfl.gl/2O5Sn6" class="btn-download">DOWNLOAD MOD V5</a>
     </div>
 
     <div class="card" style="border-left-color: #fbbf24;">
-        <h3>3. XT VIRTUAL</h3>
-        <p>Gunakan virtual ini biar bypass makin kuat.</p>
+        <h3>3. XT VIRTUAL (PERKUAT BYPASS)</h3>
+        <p>Wajib pakai virtual ini biar bypass makin kuat dan aman dari banned.</p>
         <a href="https://sfl.gl/Koaw" class="btn-download" style="background-color: #f59e0b;">DOWNLOAD VIRTUAL</a>
+    </div>
+
+    <div class="footer">
+        © 2026 XTMODEPRO. All rights reserved.
     </div>
 </div>
 
 <script src="https://pl28495535.effectivegatecpm.com/08/a5/d6/08a5d6e054ed992037d611a667568379.js"></script>
-
-<script>
-    // Skrip deteksi sederhana: Cek apakah script iklan bisa dimuat
-    window.onload = function() {
-        setTimeout(function() {
-            if (typeof document.getElementsByTagName('script')[0] === 'undefined' || window.canRunAds === undefined) {
-                // Jika terdeteksi AdBlock (DNS AdGuard juga terdeteksi)
-                // Tapi karena Popunder Adsterra random, cara termudah cek DNS adalah ini:
-                fetch('https://pl28495535.effectivegatecpm.com/').catch(() => {
-                    document.getElementById('adb-msg').style.display = 'flex';
-                });
-            }
-        }, 2000);
-    };
-</script>
 
 </body>
 </html>
